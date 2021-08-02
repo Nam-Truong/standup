@@ -32,7 +32,7 @@ Make sure that all Shell scripts have _"executable"_ permission:
 foo@bar:~$ ./run.sh start
 'start' is input argument.
 07:41:51: checking if standupReminder.sh process is running.
-07:41:51: CheckResult is 0, i.e. no standupReminder.sh process found
+07:41:51: CheckResult is 0.
 07:41:51: No standupReminder.sh process is running.
 07:41:51: Starting new standupReminder.sh process.
 07:41:51: New standupReminder.sh process is running.
@@ -46,8 +46,8 @@ _Note: "standupReminder.log" will be created in the root folder._
 foo@bar:~$ ./run.sh stop
 'stop' is input argument.
 07:52:48: checking if standupReminder.sh process is running.
-07:52:48: CheckResult is 1, i.e. no standupReminder.sh process found
-07:52:48: previous standupReminder.sh process is running. Stop it.
+07:52:48: CheckResult is 1.
+07:52:48: previous standupReminder.sh process is running. So, stop it now.
 ```
 
 ## 3. License

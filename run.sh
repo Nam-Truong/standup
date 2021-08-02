@@ -28,10 +28,10 @@ is_proc_running() {
 terminate_all_running_proc() {
   echo "$ts: checking if $PROCNAME process is running."
   result=$( is_proc_running "$PROCNAME")
-  echo "$ts: CheckResult is $result, i.e. no $PROCNAME process found"
+  echo "$ts: CheckResult is $result."
 
   if [ $result -eq 1 ]; then
-    echo "$ts: previous $PROCNAME process is running. Stop it."
+    echo "$ts: previous $PROCNAME process is running. So, stop it now."
     pkill -f $PROCNAME
   else
     echo "$ts: No $PROCNAME process is running."
